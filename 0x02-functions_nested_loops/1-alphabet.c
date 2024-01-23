@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* main - first entry point for execution for a program
-* Return: always an integer
-*/
+ * print_alphabet - prints alphabetes
+ */
+
 void print_alphabet(void)
 {
 char letter;
