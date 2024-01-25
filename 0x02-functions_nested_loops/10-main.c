@@ -1,9 +1,5 @@
-/* 10-main.c */
 #include "main.h"
 #include <stdio.h>
-
-/* Function prototype or you can include the entire function definition */
-int add(int a, int b);
 
 /**
  * main - check the code
