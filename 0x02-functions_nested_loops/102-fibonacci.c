@@ -1,4 +1,3 @@
-/* 102-fibonacci.c */
 #include <stdio.h>
 
 /**
@@ -9,20 +8,21 @@
 
 int main(void)
 {
-long int first = 1, second = 2, next;
+	unsigned long int term1 = 1;
+	unsigned long int term2 = 2;
+	unsigned long int next;
+	int i;
 
-printf("%ld, %ld", first, second);
-
-for (int i = 3; i <= 50; i++)
-{
-next = first + second;
-printf(", %ld", next);
-
-first = second;
-second = next;
-}
-
-printf("\n");
-
-return (0);
+	printf("%lu, ", term1);
+	for (i = 1; i < 50; i++)
+	{
+		printf("%lu", term2);
+		next = term1 + term2;
+		term1 = term2;
+		term2 = next;
+		if (i != 49)
+			printf(",");
+	}
+	printf("\n");
+	return (0);
 }
