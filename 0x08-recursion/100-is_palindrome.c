@@ -31,11 +31,11 @@ int _is_palindrome_helper(char *s, int start, int end)
 {
 if (start >= end)
 {
-return (1); /* Base case: empty string or single character */
+return (1);
 }
 if (s[start] != s[end])
 {
-return (0); /* Characters don't match, not a palindrome */
+return (0);
 }
 
 return (_is_palindrome_helper(s, start + 1, end - 1));
